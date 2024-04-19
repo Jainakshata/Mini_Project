@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+img {
+    width: 25%;
+    display: flex;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: black;
+}
+
+.link a:hover{
+    color: blue;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    border: 1px solid blue;
+    color: blue;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1400px;
+    font-size: 18px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+.content{
+    padding-left: 60px;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: black;
+    gap: 2rem;
+}
+
+header .content h2 {
+    color: blue;
+    margin-bottom: 3rem;
+    font-weight: 900;
+    line-height: 4rem;
+    font-size: 60px;
+}
+
+header .content p {
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    color: gray;
+    font-size: 40px;
+}
+
+header .content h1{
+    font-size: 60px;
+    color: blue;
+    margin-bottom: 40px;
+}
+
+header .image {
+    position: relative;
+}
+
+header .image img {
+    padding-top: 20px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: gray;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sub-header {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.copyright {
+    background-color: blue;
+    color: white;
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px) {
+    .nav-link {
+        display: none;
+    }
+
+    .container{
+        padding: 3rem 2rem;
+    }
+
+    .content{
+        padding-left: 5px;
+    }
+
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .image {
+        grid-area: 1/1/2/2;
+    }
+
+}
+
